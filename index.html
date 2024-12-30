@@ -3,109 +3,284 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css" />
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- =====BOX ICONS===== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/mingcute_icon@2.9.6/font/Mingcute.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Portfolio website complete</title>
   </head>
   <body>
-    <article>
-      <h1 class="title">My profile</h1>
-      <hr />
-      <img
-        src="./assets/Me.jpeg"
-        alt="Profile picture of Suntisuk Sinthunakorn"
-        width="200"
-        height="200"
-      />
-      <h2 class="title">About me</h2>
-      <p id="aboutme">
-        Hello! I’m Suntisuk Sinthuakorn, a dedicated chemistry student with a
-        passion for organic synthesis, polymers, and the extraction of natural
-        products. <br />My curiosity doesn't stop in the lab —when I have free
-        time, I dive into exciting electronic projects, such as building
-        Arduino-based pH meters and <br />developing innovative web
-        applications. Combining the precision of chemistry with the creativity
-        of technology,<br />
-        I thrive on exploring new ideas and turning them into reality
-      </p>
-      <hr />
-      <h2 class="title">Education</h2>
-      <ul id="education">
-        <li>
-          Bachelor of Science Program in Chemistry - Silpakorn University (2020
-          - 2024)
-        </li>
-        <li>
-          Master of Science Program in Chemistry - Silpakorn University (2024 -
-          Present)
-        </li>
-      </ul>
-      <hr />
-      <h2 class="title">Work Experience</h2>
-      <ul id="workexperience">
-        <h3><li>Teaching assitant</li></h3>
-        <h4>2022 - Present</h4>
-        <ul>
-          <li>Preparation of Experiment</li>
-          <li>Experiment Breifing</li>
-          <li>laboratory Safety</li>
-        </ul>
-        <h3><li>Laboratory Researcher</li></h3>
-        <h4>2024 - Present</h4>
-        <ul>
-          <li>Synthesis of gallic acid derivative etc.</li>
-          <li>Synthesis of polymer such as carpolactam etc.</li>
-          <li>Alkaloid (Mitragynine) extraction from kratom leaves.</li>
-          <li>NMR interpretation of organic compound.</li>
-          <li>HPLC analysis.</li>
-        </ul>
-      </ul>
-      <hr />
-      <h2 class="title">Skills</h2>
-      <ul id="skills">
-        <li>Microsoft Office Suite</li>
-        <li>Presentation</li>
-        <li>Multilingual (Thai, English, Japanese)</li>
-        <li>Organic Synthesis</li>
-        <li>Polymer Synthesis</li>
-        <li>Natural Product</li>
-        <li>Molecular Modeling and Molecular Docking</li>
-        <li>NMR (Bruker 300MHz)</li>
-        <li>HPLC (shimadzu Nexera LC-40 series)</li>
-        <li>
-          <a href="https://github.com/SinthunakornSuntisuk01?tab=repositories"
-            >Electronic circuit design and microcontroller (Arduino and ESP8266
-            or ESP32)</a
-          >
-        </li>
-        <li>Computer Programing</li>
-        <li>Genarative AI</li>
-      </ul>
-      <hr />
-      <h2 class="title">Award and certification</h2>
-      <ul id="awardandcert">
-        <li>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+      <nav class="nav bd-grid">
+        <div>
+          <a href="#" class="nav__logo">Suntisuk Sinthunakorn</a>
+        </div>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">Skills</a>
+            </li>
+            <li class="nav__item">
+              <a href="#work" class="nav__link">Work</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="l-main">
+      <!--===== HOME =====-->
+      <section class="home bd-grid" id="home">
+        <div class="home__data">
+          <h1 class="home__title">
+            Hi,<br />I'am <span class="home__title-color">Sinthunakorn</span
+            ><br />
+            The chemist
+          </h1>
+
+          <a href="#" class="button">Contact</a>
+        </div>
+
+        <div class="home__social">
           <a
-            href="./assets/PACCON2024-CertificateOfPresentation-00057-K94Oa9rUCPaoE9HYcNh20240201162843.pdf"
-            >International Conference (PACCON2024)</a
-          >
-        </li>
-        <li>
+            href="https://www.linkedin.com/in/suntisuk-sinthunakorn-b5755a2a7"
+            class="home__social-icon"
+            ><i class="mgc_linkedin_fill"></i
+          ></a>
+          <a href="https://t.me/SinthunakornS01" class="home__social-icon"
+            ><i class="mgc_telegram_fill"></i
+          ></a>
           <a
-            href="./assets/AI for All From Basics to GenAI Practice_AI for All From Basics to GenAI Practice - Course Completion Certificate.pdf"
-            >AI for All From Basics to GenAI Practice_AI for All From Basics to
-            GenAI Practice - Course Completion Certificate</a
+            href="https://github.com/SinthunakornSuntisuk01"
+            class="home__social-icon"
+            ><i class="mgc_github_fill"></i
+          ></a>
+        </div>
+
+        <div class="home__img">
+          <svg
+            class="home__blob"
+            viewBox="0 0 479 467"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
           >
-        </li>
-      </ul>
-      <hr />
-      <h2 class="title">Other</h2>
-      <ul>
-        <li><a href="./Public/Hobbies.html">Hobbies</a></li>
-        <li><a href="./Public/Contatc_Me.html">Contact Me</a></li>
-      </ul>
-      <footer>
-        <p class="title">@2024 Suntisuk Sinthunakorn</p>
-      </footer>
-    </article>
+            <mask id="mask0" mask-type="alpha">
+              <path
+                d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"
+              />
+            </mask>
+            <g mask="url(#mask0)">
+              <path
+                d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"
+              />
+              <image
+                class="home__blob-img"
+                x="50"
+                y="-10"
+                href="./assets/img/Me-removebg.png"
+              />
+            </g>
+          </svg>
+        </div>
+      </section>
+
+      <!--===== ABOUT =====-->
+      <section class="about section" id="about">
+        <h2 class="section-title">About</h2>
+
+        <div class="about__container bd-grid">
+          <div class="about__img">
+            <img src="./assets/img/Me.jpeg" alt="" />
+          </div>
+
+          <div>
+            <h2 class="about__subtitle">I'am Suntisuk Sinthunakorn</h2>
+            <p class="about__text">
+              Hello! I’m Suntisuk Sinthuakorn, a dedicated chemistry student
+              with a passion for organic synthesis, polymers, and the extraction
+              of natural products. My curiosity doesn't stop in the lab —when I
+              have free time, I dive into exciting electronic projects, such as
+              building Arduino project and developing innovative web
+              applications. Combining the precision of chemistry with the
+              creativity of technology, I thrive on exploring new ideas and
+              turning them into reality
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--===== SKILLS =====-->
+      <section class="skills section" id="skills">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills__container bd-grid">
+          <div>
+            <h2 class="skills__subtitle">Profesional Skills</h2>
+            <p class="skills__text">
+              As a chemist, my expertise extends far beyond the confines of
+              traditional chemistry, with a particular focus on organic
+              chemistry. However, my skill set doesn't stop there – I also
+              specialize in electronic computer programming and harness the
+              power of generative AI, blending scientific precision with
+              cutting-edge technology.
+            </p>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="mgc_flask_fill skills__icon"></i>
+                <span class="skills__name">ORGANIC SYNTHESIS</span>
+              </div>
+              <div class="skills__bar skills__organicsyn"></div>
+              <div>
+                <span class="skills__percentage">95%</span>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="mgc_leaf_fill skills__icon"></i>
+                <span class="skills__name">NATURAL PRODICT</span>
+              </div>
+              <div class="skills__bar skills__naturalp"></div>
+              <div>
+                <span class="skills__percentage">85%</span>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="mgc_search_fill skills__icon"></i>
+                <span class="skills__name">CHEMICAL ANALYSIS</span>
+              </div>
+              <div class="skills__bar skills__chemanal"></div>
+              <div>
+                <span class="skills__percentage">65%</span>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="mgc_iMac_fill skills__icon"></i>
+                <span class="skills__name">ELECTRONIC & PROGRAMMING</span>
+              </div>
+              <div class="skills__bar skills__elecpro"></div>
+              <div>
+                <span class="skills__percentage">55%</span>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <img src="./assets/img/Lab.png" alt="" class="skills__img" />
+          </div>
+        </div>
+      </section>
+
+      <!--===== WORK =====-->
+      <section class="work section" id="work">
+        <h2 class="section-title">Work</h2>
+
+        <div class="work__container bd-grid">
+          <a href="" class="work__img">
+            <img src="./assets/img/HPLC.png" alt="" />
+          </a>
+          <a href="" class="work__img">
+            <img src="./assets/img/NMR.png" alt="" />
+          </a>
+          <a href="" class="work__img">
+            <img src="./assets/img/Lab.png" alt="" />
+          </a>
+          <a href="" class="work__img">
+            <img src="./assets/img/Lab2.png" alt="" />
+          </a>
+          <a href="" class="work__img">
+            <img src="./assets/img/Arduino.png" alt="" />
+          </a>
+          <a href="" class="work__img">
+            <img src="./assets/img/Server.png" alt="" />
+          </a>
+        </div>
+      </section>
+
+      <!--===== CONTACT =====-->
+      <section class="contact section" id="contact">
+        <h2 class="section-title">Contact</h2>
+
+        <div class="contact__container bd-grid">
+          <form
+            action="/send-email "
+            method="POST"
+            id="contactForm"
+            class="contact__form"
+          >
+            <input
+              type="text"
+              name="name"
+              placeholder="Name"
+              class="contact__input"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              class="contact__input"
+              required
+            />
+            <textarea
+              name="message"
+              id="message"
+              cols="0"
+              rows="10"
+              class="contact__input"
+              placeholder="Your Message"
+              required
+            ></textarea>
+            <button type="submit" class="contact__button button">Send</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+      <p class="footer__title">Suntisuk Sinthunakorn</p>
+      <div class="footer__social">
+        <a href="https://www.facebook.com/Sinthunakorn.S01" class="footer__icon"
+          ><i class="mgc_facebook_fill"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/sinthunakorn.s01/"
+          class="footer__icon"
+          ><i class="mgc_instagram_fill"></i
+        ></a>
+        <a href="https://x.com/SinthunakornS01" class="footer__icon"
+          ><i class="mgc_twitter_fill"></i
+        ></a>
+      </div>
+      <p class="footer__copy">&#169; Sinthunakorn. All rigths reserved</p>
+    </footer>
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
